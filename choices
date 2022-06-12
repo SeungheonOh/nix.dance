@@ -1,6 +1,0 @@
-choose() { PS3='Choose your template: '
-options=("haskell" "rust" "Quit")
-select opt in "${options[@]}"; do case $opt in
-"haskell") TAR="https://github.com/SeungheonOh/nix.dance/raw/gh-page/haskell.tar.gz"; break ;;
-"rust") TAR="https://github.com/SeungheonOh/nix.dance/raw/gh-page/rust.tar.gz"; break ;;
-"Quit") break ;; *) echo "invalid option $REPLY";; esac; done;}
